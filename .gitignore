@@ -1,0 +1,10 @@
+backend/__pycache__
+backend/lib
+backend/uploaded_images
+backend/uploads
+backend/contact_data.db
+backend/shell.nix
+frontend/.next
+frontend/node_modules
+backend/models/yolov3-obj_2400.weights
+backend/yolov3model/yolov3.weights
