@@ -10,7 +10,7 @@ export default function Navbar() {
 
     const navLinks = [
         { name: 'Home', href: '/' },
-        // { name: 'Live Detection', href: '/Live_Detection' },
+        { name: 'Live Detection', href: '/Live_Detection' },
         { name: 'About', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ];
