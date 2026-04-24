@@ -14,15 +14,24 @@ init_db()
 
 app = FastAPI()
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-                   "http://localhost:3000","http://127.0.0.1:3000"],
-    allow_credentials=False,
+
+        CORSMiddleware,
+    allow_origins=["*"],  # Or list your frontend origins like ["http://localhost:3000"]
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+
+
+
+
+
+    # CORSMiddleware,
+    # allow_origins=[
+    #                "http://localhost:3000","http://127.0.0.1:3000/predict"],
+    # allow_credentials=True,
+    # allow_methods=["*"],
+    # allow_headers=["*"],
 )
-
-
 # layers model
 
 abels_value  = ['TN 09 BJ 4054', 'DL 14S C0887', 'MH38Q 6199', 'KA-09 HB-0164', 'AP13Q 8806', 'AP28 BA 7090', 'AP13Q 8815', 'AP13Q 8816', 'AP13Q 8780', 'HP37C 5788', 'AP3V 8078', 'AP13Q 1100', 'AP13Q 1121', 'AP11AV 2140', 'Ap13Q 1126', 'AP11AN 0591', 'AP13Q 1133', 'AP13Q 1136', 'AP13Q 1140', 'AP13Q 1177']    
